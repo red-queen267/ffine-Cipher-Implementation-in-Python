@@ -37,7 +37,7 @@ string="ABCDEFGHIJKLMNOPQRSTUVWXYZ" #this string has all the alphabet saved with
                     new_idx=n*(idx-b)%26# the formula to give the new letter index
                     drypt=drypt+string[new_idx]   
         print('The Decrypted Text: ',drypt)
-#calling the functions
+# calling the functions
 
     encrypt()
     
