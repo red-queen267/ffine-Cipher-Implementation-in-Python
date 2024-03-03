@@ -1,14 +1,12 @@
 # Affine-Cipher-Implementation-in-Python
 Implement the Affine Cipher in Python, a substitution cipher algorithm that employs algebraic operations modulo the alphabet size
 
-
- #This string has all the alphabet saved with the index to help encrypting and decrypting
+# This string has all the alphabet saved with the index to help encrypting and decrypting
  
     alpha="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     keya=int(input("Key a: "))
     keyb=int(input("Key b: "))
     plain=input("Enter a string: ")
-
 
 # This is a function that will encrypt the givien text
 
@@ -28,8 +26,7 @@ Implement the Affine Cipher in Python, a substitution cipher algorithm that empl
                 cipher=cipher+alpha[new_idx]
   
     return cipher
-                    
-        
+                       
 # This is a function that will encrypt the givien text
     
     def decrypt(cp):
@@ -54,5 +51,7 @@ Implement the Affine Cipher in Python, a substitution cipher algorithm that empl
     print('The Encrypted Text: ', cipher)
                 
     return drypt
+    
 # Calling the functions
+
     print('The Decrypted Text:',decrypt(encrypt()))
